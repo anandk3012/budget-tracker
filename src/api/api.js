@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useAuth } from '../context/AuthContext';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://budget-tracker-one-iota.vercel.app/api';
 
 // Transactions
 export const getTransactions = async () => {
