@@ -117,6 +117,7 @@ app.post('/api/transactions', async (req, res) => {
         return res.json(newTransaction.rows[0]);
     } catch (err) {
         console.log(err);
+        return err;
     }
 });
 

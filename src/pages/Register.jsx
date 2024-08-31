@@ -37,11 +37,12 @@ export default function Register() {
     };
 
     try {
-       const newUser = await addUser(userData);
+      const newUser = await addUser(userData);
       console.log('User Added Successfully !')
       login(newUser);
       navigate('/dashboard');
     } catch (error) {
+      logout();
       console.log(error);
     }
 
